@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+h1, h2, h3 {
+    color: #e0e0e0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+a {
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+a:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #232526 60%, #434343 100%);
+    border: 1px solid #757575;
+    border-radius: 14px;
+    padding: 20px;
+    margin: 16px 0;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17), 0 1.5px 8px rgba(0,0,0,0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #f5f5f5;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.27), 0 3px 16px rgba(0,0,0,0.35);
+    border-color: #fff;
+}
+
+.project-title {
+    color: #bdbdbd;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+}
+
+.project-language {
+    color: #90caf9;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    color: #232526;
+    background: linear-gradient(90deg, #bdbdbd 0%, #757575 100%);
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.project-link:hover {
+    background: linear-gradient(90deg, #fff 0%, #757575 100%);
+    color: #232526;
+}
+
+.animated-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-me {
+    background: linear-gradient(135deg, #232526 60%, #434343 100%);
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17), 0 1.5px 8px rgba(0,0,0,0.25);
+    color: #f5f5f5;
+    margin-bottom: 2rem;
+    border: 1px solid #757575;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #232526 0%, #434343 100%);
+    color: #bdbdbd;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-top: 1px solid #757575;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+}
+/* ...existing code... */
+
+nav, .navbar, header {
+    background: linear-gradient(90deg, #232526 0%, #434343 100%);
+    padding: 1rem 0;
+    border-bottom: 1px solid #757575;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+nav a, .navbar a, header a {
+    color: #bdbdbd;
+    font-weight: 500;
+    margin: 0 1rem;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+nav a:hover, .navbar a:hover, header a:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+nav a.active, .navbar a.active, header a.active {
+    color: #fff;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
